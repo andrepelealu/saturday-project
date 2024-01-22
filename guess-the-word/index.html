@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Guess a Word Game JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/black.css" id="theme-color">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-white fixed-top sticky-navigation">
+      <a class="navbar-brand mx-auto" href="/">
+          Saturday Project
+      </a>
+      <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" 
+              data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span data-feather="grid"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link page-scroll" href="/match-making/">Match Making Games</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn-sm rounded btn-secondary nav-link page-scroll" href="/guess-the-word/">Guess The Word</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="/quiz/">Quiz</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link page-scroll" href="/leader-board/">Leader Board</a>
+            </li>
+          </ul>
+      </div>
+  </nav>
+
+    <div class="wrapper">
+      <h1>Guess the Word</h1>
+      <div class="content">
+        <input type="text" class="typing-input" maxlength="1">
+        <div class="inputs"></div>
+        <div class="details">
+          <p class="hint">Hint: <span></span></p>
+          <p class="guess-left">Remaining guesses: <span></span></p>
+          <p class="wrong-letter">Wrong letters: <span></span></p>
+        </div>
+        <button class="reset-btn">Reset Game</button>
+      </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.5.0/feather.min.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="js/words.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
