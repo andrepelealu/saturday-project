@@ -152,15 +152,15 @@ function showResult(){
     const scoreText = result_box.querySelector(".score_text");
     if (userScore > 3){ // if user scored more than 3
         //creating a new span tag and passing the user score number and total question number
-        let scoreTag = '<span>and congrats! 🎉, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span>muantabb! 🎉, Kamu dapat skor <p>'+ userScore +'</p> dari <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
     }
     else if(userScore > 1){ // if user scored more than 1
-        let scoreTag = '<span>and nice 😎, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span>gud jobb 😎, Kamu dapat skor <p>'+ userScore +'</p> dari <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
     else{ // if user scored less than 1
-        let scoreTag = '<span>and sorry 😐, You got only <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p></span>';
+        let scoreTag = '<span>jelek banget skor nya 😐, Cuma <p>'+ userScore +'</p> dari <p>'+ questions.length +'</p></span>';
         scoreText.innerHTML = scoreTag;
     }
 }
@@ -176,7 +176,7 @@ function startTimer(time){
         }
         if(time < 0){ //if timer is less than 0
             clearInterval(counter); //clear counter
-            timeText.textContent = "Time Off"; //change the time text to time off
+            timeText.textContent = "Waktu habis"; //change the time text to time off
             const allOptions = option_list.children.length; //getting all option items
             let correcAns = questions[que_count].answer; //getting correct answer from array
             for(i=0; i < allOptions; i++){
@@ -195,11 +195,26 @@ function startTimer(time){
 }
 
 function startTimerLine(time){
+    var max_width;
+    if(window.innerWidth <= 480) {
+        max_width = window.innerWidth - 40; //Approximately, adjust as needed
+    } else if(window.innerWidth <= 768) {
+        max_width = window.innerWidth - 30; 
+    } else {
+        max_width = 549; 
+    }
+
+    // Total time for 15s in ms
+    var total_time = 15 * 1000;
+
+    // pixel increment per 29ms for total 15s filling 
+    var increment = max_width / (total_time / 29);
+
     counterLine = setInterval(timer, 29);
     function timer(){
-        time += 1; //upgrading time value with 1
+        time += increment; //upgrading time value with calculated increment
         time_line.style.width = time + "px"; //increasing width of time_line with px by time value
-        if(time > 549){ //if time value is greater than 549
+        if(time > max_width){ //if time value is greater than max_width
             clearInterval(counterLine); //clear counterLine
         }
     }
@@ -207,6 +222,6 @@ function startTimerLine(time){
 
 function queCounter(index){
     //creating a new span tag and passing the question number and total question
-    let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
+    let totalQueCounTag = '<span><p>'+ index +'</p> dari <p>'+ questions.length +'</p> Pertanyaan</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }

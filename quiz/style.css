@@ -29,19 +29,7 @@ body{
 }
 
 /* CSS for mobile devices */
-@media (max-width: 480px) {
-    .start_btn,
-    .info_box,
-    .quiz_box,
-    .result_box {
-        /* scale down the size for smaller devices */
-        transform: translate(-50%, -50%) scale(0.8);
-        /* adjust width and left properties for proper center alignment */
-        left: 50%;
-        width: 100%;
-        max-width: 320px; /* adjust maximum width accordingly */
-    }
-}
+/*  */
 
 .info_box.activeInfo,
 .quiz_box.activeQuiz,
@@ -395,4 +383,57 @@ footer button.show{
 .buttons button.quit:hover{
     color: #fff;
     background: #007bff;
+}
+
+/* Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+    .info_box,
+    .quiz_box,
+    .result_box{
+        width: 90%;
+    }
+
+    .info_box .info-title,
+    .info_box .info-list .info,
+    .quiz_box header .title,
+    .quiz_box header .timer .time_left_txt,
+    .quiz_box header .timer .timer_sec,
+    section .que_text,
+    section .option_list .option,
+    .result_box .complete_text,
+    .result_box .score_text span,
+    .result_box .buttons button{
+        font-size: 15px;
+    }
+    
+    .start_btn button{
+        width: 100%;
+        font-size: 18px;
+    }
+}
+
+/* Tablets (up to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .info_box,
+    .quiz_box,
+    .result_box {
+        width: 90%;
+    }
+
+    .info_box .info-title,
+    .info_box .info-list .info,
+    .quiz_box header .title,
+    .quiz_box header .timer .time_left_txt,
+    .quiz_box header .timer .timer_sec,
+    section .que_text,
+    section .option_list .option,
+    .result_box .complete_text,
+    .result_box .score_text span,
+    .result_box .buttons button {
+        font-size: 18px;
+    }
+
+    .start_btn button {
+        font-size: 20px;
+    }
 }

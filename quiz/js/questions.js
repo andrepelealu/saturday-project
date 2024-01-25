@@ -2,57 +2,124 @@
 let questions = [
     {
     numb: 1,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
+    question: "Konflik wadas, adalah hasil dari kebijakan dari ...",
+
+    answer: "Ganjar Pranowo",
     options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
+      "Anis Rasyid Baswedan",
+      "Prabowo Subianto",
+      "Ganjar Pranowo",
+      "Nurhadi Aldo"
     ]
   },
     {
     numb: 2,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "Siapa pencetus rumah DP 0 rupiah ?",
+    answer: "Anis Rasyid Baswedan",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "Anis Rasyid Baswedan",
+      "Prabowo Subianto",
+      "Ganjar Pranowo",
+      "Nurhadi Aldo"
     ]
   },
     {
     numb: 3,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "Siapakah calon presiden yang mempunyai 500 hektar tanah di Kalimantan?",
+    answer: "Prabowo Subianto",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "Anis Rasyid Baswedan",
+      "Prabowo Subianto",
+      "Ganjar Pranowo",
+      "Nurhadi Aldo"
     ]
   },
     {
     numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "Siapa sosok dibawah ini yang mempunyai julukan 'Anak Haram MK' ?",
+    answer: "Gibran Rakabuming Raka",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "Muhaimin Iskandar",
+      "Mahfud MD",
+      "Gibran Rakabuming Raka",
+      "Nurhadi Aldo"
     ]
   },
     {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: "Indonesia akan bahaya jika 'pasangan ini' tidak menang. Siapakah yang dimaksud dengan 'pasangan ini' ?",
+    answer: "AMIN",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "Gemoy x Gibran",
+      "AMIN",
+      "Ganjar x Mahfud",
+      "Nurhadi Aldo"
+    ]
+  },
+  {
+    numb: 6,
+    question: "Penculikan aktivis '98 identik dengan ?",
+    answer: "Prabowo Subianto",
+    options: [
+      "Anis Rasyid Baswedan",
+      "Prabowo Subianto",
+      "Ganjar Pranowo",
+      "Nurhadi Aldo"
+    ]
+  },
+  {
+    numb: 7,
+    question: "'Banyak suami korupsi karena tuntutan istri', ini adalah pernyataan yang disampaikan oleh ...",
+    answer: "Mahfud MD",
+    options: [
+      "Muhaimin Iskandar",
+      "Mahfud MD",
+      "Gibran Rakabuming Raka",
+      "Nurhadi Aldo"
+    ]
+  },
+  {
+    numb: 8,
+    question: "'Jalan tol tidak dinikmati tukang becak', ini adalah pernyataan yang disampaikan oleh ...",
+    answer: "Muhaimin Iskandar",
+    options: [
+      "Muhaimin Iskandar",
+      "Mahfud MD",
+      "Gibran Rakabuming Raka",
+      "Nurhadi Aldo"
+    ]
+  },
+  {
+    numb: 9,
+    question: "Politik identitas, adalah sesuatu yang melekat erat pada ...",
+    answer: "Anis Rasyid Baswedan",
+    options: [
+      "Anis Rasyid Baswedan",
+      "Prabowo Subianto",
+      "Ganjar Pranowo",
+      "Nurhadi Aldo"
+    ]
+  },
+  {
+    numb: 10,
+    question: "'MENYENGSARAKAN', adalah salah satu kalimat yang sulit di ucapkan oleh ... ",
+    answer: "Mahfud MD",
+    options: [
+      "Muhaimin Iskandar",
+      "Mahfud MD",
+      "Gibran Rakabuming Raka",
+      "Nurhadi Aldo"
+    ]
+  },
+  {
+    numb: 11,
+    question: "Selain Tuhan, kesempurnaan hanya milik ...",
+    answer: "Nurhadi Aldo",
+    options: [
+      "Muhaimin Iskandar",
+      "Mahfud MD",
+      "Gibran Rakabuming Raka",
+      "Nurhadi Aldo"
     ]
   },
   // you can uncomment the below codes and make duplicate as more as you want to add question
