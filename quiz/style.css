@@ -28,21 +28,18 @@ body{
                 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* Css for mobile devices */
-/* Css for mobile devices */
+/* CSS for mobile devices */
 @media (max-width: 480px) {
-    .start_btn {
-        transform: translate(-50%, -50%) scale(0.8);
-    }
-
+    .start_btn,
     .info_box,
     .quiz_box,
     .result_box {
-        position: static;
-        transform: none;
-        width: 100% !important;
-        margin: 20px 0;
-        box-shadow: none;
+        /* scale down the size for smaller devices */
+        transform: translate(-50%, -50%) scale(0.8);
+        /* adjust width and left properties for proper center alignment */
+        left: 50%;
+        width: 100%;
+        max-width: 320px; /* adjust maximum width accordingly */
     }
 }
 
