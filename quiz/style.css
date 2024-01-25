@@ -29,16 +29,20 @@ body{
 }
 
 /* Css for mobile devices */
+/* Css for mobile devices */
 @media (max-width: 480px) {
-    .start_btn,
+    .start_btn {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+
     .info_box,
     .quiz_box,
-    .result_box{
+    .result_box {
         position: static;
-        top: auto;
-        left: auto;
         transform: none;
-        width: 100%;
+        width: 100% !important;
+        margin: 20px 0;
+        box-shadow: none;
     }
 }
 
